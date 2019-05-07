@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|IBM+Plex+Mono:200|Six+Caps" rel="stylesheet" />
+    <title>Units</title>
+</head>
+
+<body id="units">
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li class="current"><a href="units.html">Units</a></li>
+                        <li><a href="announcements.html">Announcements</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uimg">
+        <div class="units-overlay">
+            <div class="units-content">
+                <h1>37th Training Wing</h1>
+            </div>
+            <div class="utext">
+                <span class="border trans">
+                    Units
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <section class="units-section section-light">
+        <h2>Meet our Units</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit adipisci inventore maxime architecto
+            eius natus officia porro optio, explicabo odit ab? Minima earum pariatur ducimus corrupti laboriosam culpa,
+            repellendus beatae praesentium doloribus minus blanditiis consequatur cupiditate! Nesciunt velit distinctio
+            sapiente vitae aliquam, ab id ex, voluptatibus nam labore, error corrupti.
+        </p>
+    </section>
+
+    <div class="uimg1">
+        <div class="ptext">
+        </div>
+    </div>
+
+    <section class="units-section section-dark">
+        <h2>37TRW Staff Agencies</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, reiciendis, molestias nobis consequuntur
+            cum tenetur totam cumque similique distinctio nostrum illo at itaque explicabo inventore.
+        </p>
+    </section>
+
+    <div class="uimg2">
+        <div class="wrap">
+            <div id="arrow-left" class="arrow"></div>
+            <div id="slider">
+                <div class="slide slide1">
+                    <div class="slide-content">
+                        <span>
+                            Image One
+                        </span>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="slide-content">
+                        <span>
+                            Image Two
+                        </span>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="slide-content">
+                        <span>
+                            Image Three
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="arrow-right" class="arrow"></div>
+        </div>
+        <div class="ptext">
+        </div>
+    </div>
+
+    <section class="section section-light">
+
+        <h2>37th Training Group</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nostrum! Deserunt fuga officia, ullam
+            est consequatur eligendi dolores rem autem a et in, laboriosam fugiat.
+        </p>
+    </section>
+
+    <div class="uimg3">
+        <div class="wrap1">
+            <div id="arrow-left1" class="arrow1"></div>
+            <div id="uslider">
+                <div class="uslide slide4">
+                    <div class="slide-content1">
+                        <span>
+                            Image One
+                        </span>
+                    </div>
+                </div>
+                <div class="uslide slide5">
+                    <div class="slide-content1">
+                        <span>
+                            Image Two
+                        </span>
+                    </div>
+                </div>
+                <div class="uslide slide6">
+                    <div class="slide-content1">
+                        <span>
+                            Image Three
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="arrow-right1" class="arrow1"></div>
+        </div>
+        <div class="ptext">
+        </div>
+    </div>
+
+    <section class="section section-dark">
+        <h2>737th Training Group</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni, ad pariatur corrupti, accusamus fuga
+            praesentium maiores saepe quibusdam dolores fugiat illum. Obcaecati, perferendis laudantium?
+        </p>
+    </section>
+
+    <div class="uimg4">
+        <div class="ptext">
+        </div>
+    </div>
+
+    <section class="section section-light">
+        <h2>IAAFA</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quos esse qui enim est velit vero
+            perspiciatis quod, expedita iste odio numquam deserunt neque voluptatibus.
+        </p>
+    </section>
+
+    <div class="uimg5">
+        <div class="ptext">
+        </div>
+    </div>
+
+    <section class="section section-dark">
+        <h2>Defense Language Institute</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quis quae aliquam atque veritatis commodi
+            nisi, cum incidunt adipisci quo. Nam minus ab magni error?
+        </p>
+    </section>
+
+    <script>
+        let sliderImages = document.querySelectorAll(".slide"),
+            arrowLeft = document.querySelector("#arrow-left"),
+            arrowRight = document.querySelector("#arrow-right"),
+            current = 0;
+
+        // Clear all images
+        function reset() {
+            for (let i = 0; i < sliderImages.length; i++) {
+                sliderImages[i].style.display = "none";
+            }
+        }
+
+        // Init slider
+        function startSlide() {
+            reset();
+            sliderImages[0].style.display = "block";
+        }
+
+        // Show prev
+        function slideLeft() {
+            reset();
+            sliderImages[current - 1].style.display = "block";
+            current--;
+        }
+
+        // Show next
+        function slideRight() {
+            reset();
+            sliderImages[current + 1].style.display = "block";
+            current++;
+        }
+
+        // Left arrow click
+        arrowLeft.addEventListener("click", function () {
+            if (current === 0) {
+                current = sliderImages.length;
+            }
+            slideLeft();
+        });
+
+        // Right arrow click
+        arrowRight.addEventListener("click", function () {
+            if (current === sliderImages.length - 1) {
+                current = -1;
+            }
+            slideRight();
+        });
+
+        startSlide();
+    </script>
+
+    <script>
+        let usliderImages = document.querySelectorAll(".uslide"),
+            arrowLeft1 = document.querySelector("#arrow-left1"),
+            arrowRight1 = document.querySelector("#arrow-right1"),
+            current1 = 0;
+
+        // Clear all images
+        function reset1() {
+            for (let i = 0; i < usliderImages.length; i++) {
+                usliderImages[i].style.display = "none";
+            }
+        }
+
+        // Init slider
+        function startSlide1() {
+            reset1();
+            usliderImages[0].style.display = "block";
+        }
+
+        // Show prev
+        function slideLeft1() {
+            reset1();
+            usliderImages[current1 - 1].style.display = "block";
+            current1--;
+        }
+
+        // Show next
+        function slideRight1() {
+            reset1();
+            usliderImages[current1 + 1].style.display = "block";
+            current1++;
+        }
+
+        // Left arrow click
+        arrowLeft1.addEventListener("click", function () {
+            if (current1 === 0) {
+                current1 = usliderImages.length;
+            }
+            slideLeft1();
+        });
+
+        // Right arrow click
+        arrowRight1.addEventListener("click", function () {
+            if (current1 === usliderImages.length - 1) {
+                current1 = -1;
+            }
+            slideRight1();
+        });
+
+        startSlide1();
+    </script>
+
+</body>
+
+</html>
