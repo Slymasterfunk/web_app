@@ -782,6 +782,11 @@
 .answer {
   padding-bottom: 3rem; }
 
+/*
+git checkout gh-pages
+npm run deploy
+git commit -m 'Insert message'
+*/
 @media (max-width: 568px) {
   .pimg1,
   .pimg2,
