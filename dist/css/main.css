@@ -170,8 +170,8 @@
   overflow: hidden; }
 
 .img {
-  background: url("../img/img.jpg") no-repeat;
-  min-height: 72vh;
+  background: url("../img/img.jpg");
+  min-height: 69vh;
   background-attachment: fixed; }
 
 .index-content {
@@ -661,10 +661,12 @@
   min-height: 350px; }
 
 #announcements-info .a-section-2 {
+  margin-top: -.1rem;
   background-image: url("../img/img25.jpg");
   min-height: 350px; }
 
 #announcements-info .a-section-3 {
+  margin-top: -.1rem;
   background-image: url("../img/img26.jpg");
   min-height: 350px; }
 
