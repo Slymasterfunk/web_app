@@ -375,14 +375,13 @@
 }
 
 .pimg1 {
-    background-image: url("../img/img1.jpg");
+    background-image: url("../img/img1m.jpg");
     min-height: 530px;
 }
 
 .history-overlay {
     background-color: rgba(0, 0, 0, 0.66);
     height: 530px;
-    left: 0;
     position: absolute;
     top: 0;
     transition: background-color 300ms ease;
@@ -396,7 +395,7 @@
 }
 
 .pimg2 {
-    background-image: url("../img/img2.jpg");
+    background-image: url("../img/img2m.jpg");
     min-height: 535px;
 }
 
@@ -441,11 +440,11 @@
 
 .htext .border {
     position: absolute;
-    padding-top: 18rem;
-    padding-left: 2.5rem;
+    padding-top: 2rem;
+    padding-left: 15vw;
+    font-size: 55px;
     text-align: center;
-    font-size: 150px;
-    letter-spacing: 8px;
+    letter-spacing: 10px;
     text-transform: uppercase;
     color: #eee;
 }
@@ -482,12 +481,12 @@
 
 .uimg {
     background-image: url("../img/img.jpg");
-    min-height: 595px;
+    min-height: 530px;
 }
 
 .units-overlay {
     background-color: rgba(0, 0, 0, 0.4);
-    height: 595px;
+    height: 530px;
     left: 0;
     position: absolute;
     top: 0;
@@ -545,8 +544,8 @@
     .slide-content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: bottom;
+        padding-top: 35rem;
         text-align: center;
     }
 
@@ -619,8 +618,8 @@
     .slide-content1 {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: bottom;
+        padding-top: 35rem;
         text-align: center;
     }
 
@@ -700,11 +699,11 @@
 
 .utext .border {
     position: absolute;
-    padding-top: 12.2rem;
-    padding-left: 2.5rem;
+    padding-top: 2rem;
+    padding-left: 25vw;
     text-align: center;
-    font-size: 150px;
-    letter-spacing: 8px;
+    font-size: 55px;
+    letter-spacing: 10px;
     text-transform: uppercase;
     color: #eee;
 }
@@ -736,12 +735,12 @@
 
 .aimg1 {
     background-image: url("../img/img22.jpg");
-    min-height: 400px;
+    min-height: 530px;
 }
 
 .announcements-overlay {
     background-color: rgba(0, 0, 0, 0.39);
-    height: 400px;
+    height: 530px;
     left: 0;
     position: absolute;
     top: 0;
@@ -751,65 +750,72 @@
 }
 
 .events {
-    font-size: 50px;
-    margin: 50px;
+    font-size: 40px;
+    margin: 40px;
     color: #666;
-}
-
-#announcements-info {
-    display: grid;
-    grid-gap: 75px;
-    grid-template-areas: "asection1 asection2 asection3";
-    grid-template-columns: repeat (3, 3fr);
-    margin: 75px;
+    text-align: center;
 }
 
 #announcements-info .a-section {
-    padding: 2rem;
-    background: rgb(122, 122, 122);
-    color: #666;
+    color: #fff;
     text-align: center;
+}
+
+#announcements-info .container {
+    background-color: rgba(0, 0, 0, 0.534);
+    transition: background-color 300ms ease;
+    min-width: 100vw;
+    height: 50.2vh;
+    left: 0;
+    margin-top: 0;
+    position: sticky;
 }
 
 #announcements-info h1 {
     font-family: serif;
     font-size: 35px;
-    padding-bottom: 10px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 #announcements-info .a-section-1 {
     background-image: url("../img/img23.jpg");
-    grid-area: asection1;
+    min-height: 350px;
+
 }
 
 #announcements-info .a-section-2 {
-    background-image: url("../img/img23.jpg");
-    grid-area: asection2;
+    background-image: url("../img/img25.jpg");
+    min-height: 350px;
 }
 
 #announcements-info .a-section-3 {
-    background-image: url("../img/img23.jpg");
-    grid-area: asection3;
+    background-image: url("../img/img26.jpg");
+    min-height: 350px;
 }
 
 .atext .border {
     position: absolute;
-    padding-top: 18rem;
-    padding-left: 2.5rem;
+    padding-top: 2rem;
+    padding-left: 2vw;
     text-align: center;
-    font-size: 100px;
+    font-size: 34px;
     letter-spacing: 8px;
     text-transform: uppercase;
     color: #eee;
 }
 
-.a-section-light h1 {
+.a-light h1 {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 2rem;
 }
 
-.a-section-light {
-    margin-top: 30px;
+#announcements-info p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.a-light {
     padding: 30px;
     font-size: 20px;
     background-color: #666;
@@ -823,30 +829,28 @@
     padding-top: 1rem;
 }
 
-#contact {
-    display: grid;
-    grid-gap: 300px;
-    grid-template-areas: "info af";
-    margin: 75px;
-    color: #666;
-}
-
 #contact h2 {
+    line-height: 1;
     font-family: serif;
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 30px;
 }
 
-#contact .c-info {
-    grid-area: info;
-    padding-left: 10rem;
-}
-
-#contact .af {
-    grid-area: af;
-    padding-right: 10rem;
+#contact {
     text-align: center;
     align-items: center;
+}
+
+#contact .c-info {
+    padding-bottom: 2rem;
+}
+
+
+
+#contact .af {
+    color: #fff;
+    padding-top: 2rem;
+    background: rgb(0, 2, 32);
 }
 
 /*FAQS*/
@@ -876,12 +880,12 @@
 
 .fimg1 {
     background-image: url("../img/img24.jpg");
-    min-height: 400px;
+    min-height: 530px;
 }
 
 .faqs-overlay {
     background-color: rgba(0, 0, 0, 0.39);
-    height: 400px;
+    height: 530px;
     left: 0;
     position: absolute;
     top: 0;
@@ -892,11 +896,11 @@
 
 .ftext .border {
     position: absolute;
-    padding-top: 15rem;
-    padding-left: 2.5rem;
+    padding-top: 1vh;
+    padding-left: 30vw;
     text-align: center;
-    font-size: 100px;
-    letter-spacing: 8px;
+    font-size: 55px;
+    letter-spacing: 10px;
     text-transform: uppercase;
     color: #eee;
 }
@@ -928,9 +932,8 @@
 
 /*
 git add .
+git commit -m "Insert message"
 git checkout gh-pages
-npm run deploy
-git commit -m 'Insert message'
 npm i gh-pages
 npm run deploy
 */
