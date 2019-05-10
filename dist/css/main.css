@@ -2,7 +2,7 @@
 .menu-wrap {
   position: fixed;
   top: 1rem;
-  right: 10rem;
+  right: 8rem;
   z-index: 4; }
 
 .menu-wrap .toggler {
@@ -94,7 +94,7 @@
   align-items: center;
   justify-content: center;
   margin: 0;
-  line-height: 1.8em; }
+  line-height: .5em; }
 
 .menu-wrap .menu > div {
   background: var(--overlay-color);
@@ -170,7 +170,7 @@
   overflow: hidden; }
 
 .img {
-  background: url("../img/img.jpg");
+  background: url("../img/imgm.jpg") no-repeat;
   min-height: 69vh;
   background-attachment: fixed; }
 
@@ -182,10 +182,12 @@
 
 .index-content h1 {
   font-family: "Cinzel", serif;
-  font-size: 40px;
+  font-size: 25px;
   margin-top: 2rem;
   margin-right: 65vw;
-  margin-bottom: 20rem; }
+  margin-bottom: 20rem;
+  padding-left: 1.5rem;
+  text-align: left; }
 
 .index-content p {
   font-family: "Six Caps", sans-serif;
@@ -714,8 +716,16 @@
 
 #contact .af {
   color: #fff;
-  padding-top: 2rem;
-  background: #000220; }
+  margin: 0;
+  padding: 2rem;
+  background: #000220;
+  background-image: url("../img/img4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh; }
 
 /*FAQS*/
 #faqs {
@@ -789,19 +799,29 @@ git checkout gh-pages
 npm i gh-pages
 npm run deploy
 */
-@media (max-width: 960px) {
-  .container {
-    padding-right: 3rem;
-    padding-left: 3rem; } }
+/*@media (max-width: 960px) {
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
 
 @media (max-width: 500px) {
-  .menu-wrap {
-    right: 8rem; }
-  .index-content {
-    line-height: 1.5rem; }
-  .index-content h1 {
-    font-size: 25px;
-    padding-left: 1.5rem;
-    text-align: left; }
-  .img {
-    background-image: url("../img/imgm.jpg"); } }
+    .menu-wrap {
+        right: 8rem;
+    }
+
+    .index-content {
+        line-height: 1.5rem;
+    }
+
+    .index-content h1 {
+        font-size: 25px;
+        padding-left: 1.5rem;
+        text-align: left;
+    }
+
+    .img {
+        background-image: url("../img/imgm.jpg");
+    }
+}*/
