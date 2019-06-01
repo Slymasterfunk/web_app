@@ -133,10 +133,10 @@
 
 .menu-wrap .menu>div>div ul>li {
     list-style: none;
-    font-family: "Six Caps", sans-serif;
+    font-family: fantasy;
     color: #fff;
-    font-size: 4rem;
-    padding: 3rem;
+    font-size: 3rem;
+    padding: 3rem 0 3rem 0rem;
 }
 
 .menu-wrap .menu>div>div ul>li>a {
@@ -160,55 +160,34 @@
 
 /*INDEX*/
 #index {
-    margin: 0;
+    color: #333;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
-    color: #333;
-    overflow-x: hidden;
+    margin: 0;
 }
 
-.visible-desktop {
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.index-overlay,
-.iimg {
-    position: relative;
-    background-position: center;
-    background-size: cover;
+.index-section0 {
+    background: url("../img/imgm.jpg");
     background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 130%;
     background-attachment: fixed;
-}
-
-.index-overlay {
-    background-color: rgba(0, 0, 0, 0);
-    height: 70vh;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: background-color 300ms ease;
-    width: 100%;
+    height: 62vh;
     overflow: hidden;
 }
 
-.img {
-    background: url("../img/imgm.jpg") no-repeat;
-    min-height: 69vh;
-    background-attachment: fixed;
-}
-
 .index-content {
+    color: #fff;
     max-width: 1400px;
     margin: auto;
     text-align: center;
-    color: #fff;
 }
 
 .index-content h1 {
     font-family: "Cinzel", serif;
     font-size: 25px;
+    line-height: 3.5vh;
     margin-top: 2rem;
     margin-right: 65vw;
     margin-bottom: 20rem;
@@ -216,72 +195,32 @@
     text-align: left;
 }
 
-.index-content p {
-    font-family: "Six Caps", sans-serif;
-    max-width: 1000px;
-    margin: auto;
-    font-size: 5.5rem;
-    display: block;
-    padding-bottom: 2rem;
-}
-
-#state {
-    bottom: -85vh;
-    cursor: pointer;
-    font-size: 4.5rem;
-    left: 48vw;
-    position: absolute;
-    color: #fff;
-}
-
-.bounce {
-    animation-name: bounce;
-    transform-origin: center bottom;
-    animation-iteration-count: infinite;
-    cursor: default;
-}
-
-.animated {
-    animation-duration: 2s;
-    animation-fill-mode: 5s;
-}
-
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(14px);
-    }
-
-    100% {
-        transform: translateY(50px);
-    }
+.welcome {
+    padding: 5% 3% 0% 3%;
+    text-align: center;
 }
 
 .welcome h2 {
-    text-align: center;
-    padding: 10px;
-    font-size: 34px;
+    font-size: 5vh;
+    padding-bottom: 3.6vh
 }
 
 .welcome p {
-    margin: 20px;
+    font-size: 3.1vh;
+    padding-bottom: 3%;
 }
 
-.iimg {
+.index-section1 {
 
     #islider,
-    .iwrap,
-    .islide-content {
-        margin: 0;
-        padding: 0;
+    .islide-content,
+    .iwrap {
         font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
         width: 100%;
-        height: 690px;
-        overflow-x: hidden;
     }
 
     .iwrap {
@@ -289,10 +228,10 @@
     }
 
     .islide {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
     }
 
     .islide1 {
@@ -312,68 +251,77 @@
         flex-direction: column;
         justify-content: bottom;
         padding-top: 37rem;
-        text-align: center;
-    }
-
-    .welcome p {
+        position: absolute;
         text-align: center;
     }
 
     .islide-content span {
-        font-size: 3rem;
         color: #fff;
+        font-size: 3rem;
     }
 
     .iarrow {
+        border-style: solid;
         cursor: pointer;
+        height: 0;
+        margin-top: -35px;
         position: absolute;
         top: 50%;
-        margin-top: -35px;
         width: 0;
-        height: 0;
-        border-style: solid;
     }
 
     #iarrow-left {
-        border-width: 30px 40px 30px 0;
         border-color: transparent #fff transparent transparent;
+        border-width: 30px 40px 30px 0;
         left: 0;
         margin-left: 30px;
     }
 
     #iarrow-right {
-        border-width: 30px 0 30px 40px;
         border-color: transparent transparent transparent #fff;
-        right: 0;
+        border-width: 30px 0 30px 40px;
         margin-right: 30px;
+        right: 0;
     }
+}
+
+.index-section2 {
+    padding: 3vh 0 3vh 0;
+    text-align: center;
+}
+
+.index-section3 {
+    background-color: #666;
+    color: white;
+    padding: 3vh 0 3vh 0;
+    text-align: center;
 }
 
 /*HISTORY*/
 
 #history {
     height: 100%;
-    margin: 0;
     line-height: 1.8em;
+    margin: 0;
 }
 
 .history-content h1 {
+    color: #fff;
     font-family: "Cinzel", serif;
     font-size: 40px;
-    padding-top: 3rem;
-    color: #fff;
     padding-left: 2.5rem;
+    padding-top: 3rem;
 }
 
 #overlay,
 .pimg1,
 .pimg2,
 .pimg3 {
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .pimg1 {
