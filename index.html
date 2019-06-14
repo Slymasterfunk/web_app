@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Cinzel|IBM+Plex+Mono:200|Six+Caps" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|IBM+Plex+Mono:200|Six+Caps" rel="stylesheet" />
     <title>Home</title>
 </head>
@@ -34,114 +34,112 @@
         </div>
     </div>
 
-    <div class="index-section0">
-        <div class="index-content">
+    <header class="index">
+        <div class="index-top">
             <h1>37th Training Wing</h1>
         </div>
-    </div>
-    <section class="welcome">
-        <h2>Welcome</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum officiis, quasi sapiente assumenda
-            accusantium repellat magni aliquid fugiat asperiores.
-        </p>
+        <div class="index-content">
+            <h1>Foundation of the Group</h1>
+            <p>Benchmark of the Air Force</p>
+        </div>
+    </header>
+
+    <section class="tabs">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <h1>TRW/CC</h1>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <h1>TRW/CV</h1>
+            </div>
+            <div id="tab-3" class="tab-item">
+                <h1>TRW/CCM</h1>
+            </div>
+        </div>
     </section>
 
-    <div class="index-section1">
-        <div class="iwrap">
-            <div id="iarrow-left" class="iarrow"></div>
-            <div id="islider">
-                <div class="islide islide1">
-                    <div class="islide-content">
-                        <span>
-                            37 TRW/CC
-                        </span>
-                    </div>
-                </div>
-                <div class="islide islide2">
-                    <div class="islide-content">
-                        <span>
-                            37 TRW/CV
-                        </span>
-                    </div>
-                </div>
-                <div class="islide islide3">
-                    <div class="islide-content">
-                        <span>
-                            37 TRW/CCM
-                        </span>
-                    </div>
+    <section class="tab-content">
+        <div class="container">
+
+            <!-- Tab Content 1-->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <img src="img/img28.jpg" alt="">
+                    <p class="text-lg">
+                        Commander
+                    </p>
                 </div>
             </div>
-            <div id="iarrow-right" class="iarrow"></div>
+
+            <!-- Tab Content 2-->
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-2-content-top">
+                    <img src="img/img29.jpg" alt="">
+                    <p class="text-lg">
+                        Vice Commander
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tab Content 3-->
+            <div id="tab-3-content" class="tab-content-item">
+                <div class="tab-3-content-top">
+                    <img src="img/img30.jpg" alt="">
+                    <p class="text-lg">
+                        Command Chief
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <section class="index-section2">
-        <h2>Mission Statement</h2>
-        <p>
-            Train, educate, develop and inspire Airmen and strengthen partnerships to compete, deter and win.
-        </p>
     </section>
 
-    <section class="index-section3">
-        <h2>Vision</h2>
-        <p>To be the Department of Defense Training Standard of Excellence.</p>
+    <!--Message-->
+    <section class="message">
+        <div class="container">
+            <div id="message-1" class="message-item">
+                <h1>Mission</h1>
+                <p>Train, educate, develop and inspire Airmen and strengthen partnerships to compete, deter and win.</p>
+            </div>
+
+            <div id="message-2" class="message-item">
+                <h1>Vision</h1>
+                <p>To be the Department of Defense Training Standard of Excellence.</p>
+            </div>
+        </div>
     </section>
 
+    <!--Footer-->
+    <footer class="footer">
+        <p>Questions? Call 1-210-444-4444</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Local</a></li>
+                <li><a href="#">Parade</a></li>
+                <li><a href="#">Wing Info</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Public Affairs</a></li>
+            </ul>
+        </div>
+    </footer>
 
-    <script>
-        let isliderImages = document.querySelectorAll(".islide"),
-            iarrowLeft = document.querySelector("#iarrow-left"),
-            iarrowRight = document.querySelector("#iarrow-right"),
-            icurrent = 0;
-
-        // Clear all images
-        function reset() {
-            for (let i = 0; i < isliderImages.length; i++) {
-                isliderImages[i].style.display = "none";
-            }
-        }
-
-        // Init slider
-        function startSlide() {
-            reset();
-            isliderImages[0].style.display = "block";
-        }
-
-        // Show prev
-        function slideLeft() {
-            reset();
-            isliderImages[icurrent - 1].style.display = "block";
-            icurrent--;
-        }
-
-        // Show next
-        function slideRight() {
-            reset();
-            isliderImages[icurrent + 1].style.display = "block";
-            icurrent++;
-        }
-
-        // Left arrow click
-        iarrowLeft.addEventListener("click", function () {
-            if (icurrent === 0) {
-                icurrent = isliderImages.length;
-            }
-            slideLeft();
-        });
-
-        // Right arrow click
-        iarrowRight.addEventListener("click", function () {
-            if (icurrent === isliderImages.length - 1) {
-                icurrent = -1;
-            }
-            slideRight();
-        });
-
-        startSlide();
-    </script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
