@@ -334,8 +334,7 @@ img {
 #history {
   height: 100%;
   line-height: 1.8em;
-  -webkit-font-smoothing: antialiased;
-  background: var(--overlay-color); }
+  -webkit-font-smoothing: antialiased; }
 
 .history {
   position: relative;
@@ -351,8 +350,8 @@ img {
   font-size: 1rem;
   line-height: 3.7vh;
   padding-top: 2rem;
-  margin-right: 65vw;
-  padding-left: .5rem;
+  margin-right: 70vw;
+  padding-left: 2rem;
   text-align: left; }
 
 .history-top .title {
@@ -361,7 +360,7 @@ img {
   justify-content: center;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: 2vw;
   text-transform: uppercase;
   color: #eee; }
@@ -440,48 +439,6 @@ img {
 
 .history-4-content p {
   padding: 1.5rem; }
-
-.section-dark h2,
-.section-light h2 {
-  padding-bottom: 2rem; }
-
-.pimg2 {
-  background-image: url("../img/img2m.jpg");
-  min-height: 535px; }
-
-.pimg3 {
-  background-image: url("../img/img3.jpg");
-  min-height: 535px; }
-
-.section {
-  text-align: center;
-  padding: 30px 50px;
-  color: #000; }
-
-.section-light {
-  background-color: #f4f4f4;
-  color: #000;
-  font-size: 20px; }
-
-.section-dark {
-  background-color: #282e34;
-  color: #ddd;
-  font-size: 20px; }
-
-.ptext {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-  font-size: 27px;
-  letter-spacing: 8px;
-  text-transform: uppercase; }
-
-.ptext .border {
-  background-color: #111;
-  color: #eee;
-  padding: 20px; }
 
 /*UNITS*/
 #units {
@@ -760,10 +717,10 @@ img {
 .announcements-1-content h1 {
   color: #666;
   text-align: center;
-  padding: 1.5rem; }
+  padding: 1.5rem 0; }
 
 .announcements-1-content p {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding-bottom: 1.5rem;
   color: #666; }
 
 .announcements-content {
@@ -773,7 +730,8 @@ img {
   font-family: serif;
   font-size: 2rem;
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  line-height: 2rem; }
 
 .announcements-2-content {
   z-index: 1;
@@ -961,6 +919,10 @@ git commit -m "Insert message"
 git checkout gh-pages
 npm i gh-pages
 npm run deploy
+*/
+/*
+NOTES:
+- Oxford comma in mission statement
 */
 /*@media (max-width: 960px) {
     .container {
