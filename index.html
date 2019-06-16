@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|IBM+Plex+Mono:200|Six+Caps" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|IBM+Plex+Mono:200|Six+Caps" rel="stylesheet" />
+    <title>Home</title>
+</head>
+
+<body id="index">
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li class="current"><a href="index.html">Main</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="announcements.html">Announcements</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="index-section0">
+        <div class="index-content">
+            <h1>37th Training Wing</h1>
+        </div>
+    </div>
+    <section class="welcome">
+        <h2>Welcome</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum officiis, quasi sapiente assumenda
+            accusantium repellat magni aliquid fugiat asperiores.
+        </p>
+    </section>
+
+    <div class="index-section1">
+        <div class="iwrap">
+            <div id="iarrow-left" class="iarrow"></div>
+            <div id="islider">
+                <div class="islide islide1">
+                    <div class="islide-content">
+                        <span>
+                            37 TRW/CC
+                        </span>
+                    </div>
+                </div>
+                <div class="islide islide2">
+                    <div class="islide-content">
+                        <span>
+                            37 TRW/CV
+                        </span>
+                    </div>
+                </div>
+                <div class="islide islide3">
+                    <div class="islide-content">
+                        <span>
+                            37 TRW/CCM
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="iarrow-right" class="iarrow"></div>
+        </div>
+    </div>
+
+    <section class="index-section2">
+        <h2>Mission Statement</h2>
+        <p>
+            Train, educate, develop and inspire Airmen and strengthen partnerships to compete, deter and win.
+        </p>
+    </section>
+
+    <section class="index-section3">
+        <h2>Vision</h2>
+        <p>To be the Department of Defense Training Standard of Excellence.</p>
+    </section>
+
+
+    <script>
+        let isliderImages = document.querySelectorAll(".islide"),
+            iarrowLeft = document.querySelector("#iarrow-left"),
+            iarrowRight = document.querySelector("#iarrow-right"),
+            icurrent = 0;
+
+        // Clear all images
+        function reset() {
+            for (let i = 0; i < isliderImages.length; i++) {
+                isliderImages[i].style.display = "none";
+            }
+        }
+
+        // Init slider
+        function startSlide() {
+            reset();
+            isliderImages[0].style.display = "block";
+        }
+
+        // Show prev
+        function slideLeft() {
+            reset();
+            isliderImages[icurrent - 1].style.display = "block";
+            icurrent--;
+        }
+
+        // Show next
+        function slideRight() {
+            reset();
+            isliderImages[icurrent + 1].style.display = "block";
+            icurrent++;
+        }
+
+        // Left arrow click
+        iarrowLeft.addEventListener("click", function () {
+            if (icurrent === 0) {
+                icurrent = isliderImages.length;
+            }
+            slideLeft();
+        });
+
+        // Right arrow click
+        iarrowRight.addEventListener("click", function () {
+            if (icurrent === isliderImages.length - 1) {
+                icurrent = -1;
+            }
+            slideRight();
+        });
+
+        startSlide();
+    </script>
+
+</body>
+
+</html>

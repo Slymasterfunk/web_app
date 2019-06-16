@@ -194,7 +194,7 @@ img {
 
 .index {
     width: 100%;
-    height: 93vh;
+    height: 55vh;
     position: relative;
     background: url("../img/img27.jpg") no-repeat center center/cover;
 }
@@ -208,10 +208,10 @@ img {
     height: 100%;
     z-index: 1;
     background: rgba(0, 0, 27, 0.6);
-    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    box-shadow: inset 30px 25px 62px #000000, inset -30px -25px 62px #000000;
 }
 
-.index-top {
+.index-top h1 {
     font-family: "Cinzel", serif;
     position: relative;
     z-index: 2;
@@ -219,17 +219,9 @@ img {
     left: 5vw;
     margin-right: 65vw;
     text-align: left;
-    font-size: 13px;
+    font-size: 1rem;
     line-height: 3.5vh;
     padding-left: 1.5rem;
-}
-
-.index-top img {
-    width: 170px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .index-content {
@@ -241,39 +233,40 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 40vh;
+    margin-top: 30vh;
 }
 
 .index-content h1 {
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 1.1;
-    margin: 0 0 2vh;
+    font-family: "Six Caps";
+    font-weight: 580;
+    font-size: 3.3rem;
+    line-height: 1;
+    margin: 0 0 .5vh;
 }
 
 .index-content p {
     text-transform: uppercase;
     color: #fff;
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1rem;
     line-height: 1.25rem;
-    margin: 0 0 2vh;
+    margin: 0 0 .5vh;
 }
 
 //Tabs
 .tabs {
     background: var(--overlay-color);
-    padding-top: 1rem;
     border-bottom: 0.5vh solid #3d3d3d;
 }
 
 .tabs .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2.5rem;
+    grid-gap: 1.5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: .7rem;
 }
 
 .tabs .container>div {
@@ -297,6 +290,11 @@ img {
     text-align: center;
     font-family: "Times New Roman", Times, serif;
     font-size: 2.5rem;
+    //height: 60vh;
+}
+
+.tab-content img {
+    height: 60vh;
 }
 
 #tab-1-content .tab-1-content-inner {
@@ -336,11 +334,16 @@ img {
     margin-bottom: 3vh;
 }
 
+#message-2 {
+    margin-top: 3vh;
+}
+
 //Footer
 .footer {
     padding: 0.5rem 2rem;
     margin: 1rem auto;
     overflow: auto;
+
 }
 
 .footer,
@@ -351,6 +354,7 @@ img {
 
 .footer p {
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .footer .footer-cols {
@@ -408,7 +412,7 @@ img {
 .history {
     position: relative;
     background: url("../img/img1m.jpg") no-repeat center center/cover;
-    height: 70vh;
+    height: 55vh;
     width: 100%;
 }
 
@@ -418,11 +422,11 @@ img {
 
 .history-top h1 {
     font-family: "Cinzel", serif;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 3.7vh;
     padding-top: 2rem;
     margin-right: 65vw;
-    padding-left: 1.5rem;
+    padding-left: .5rem;
     text-align: left;
 }
 
@@ -444,11 +448,11 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70vh;
+    height: 55.1vh;
     z-index: 1;
     background: rgba(0, 0, 27, 0.6);
-    box-shadow: inset 120px 100px 250px var(--overlay-color),
-        inset -120px -100px 250px var(--overlay-color);
+    box-shadow: inset 30px 25px 62px var(--overlay-color),
+        inset -30px -25px 62px var(--overlay-color);
 }
 
 .history-top,
@@ -849,7 +853,7 @@ img {
 .announcements {
     position: relative;
     background: url("../img/img22.jpg") no-repeat center center/cover;
-    height: 70vh;
+    height: 55vh;
     width: 100%;
 }
 
@@ -859,11 +863,11 @@ img {
 
 .announcements-top h1 {
     font-family: "Cinzel", serif;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 3.7vh;
     padding-top: 2rem;
     margin-right: 65vw;
-    padding-left: 1.5rem;
+    padding-left: .5rem;
     text-align: left;
 }
 
@@ -873,7 +877,7 @@ img {
     justify-content: center;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     letter-spacing: 2vw;
     text-transform: uppercase;
     color: #eee;
@@ -885,10 +889,10 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70vh;
+    height: 55.1vh;
     z-index: 1;
     background: rgba(0, 0, 27, 0.6);
-    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    box-shadow: inset 30px 25px 62px #000000, inset -30px -25px 62px #000000;
 }
 
 .announcements-top,
@@ -907,7 +911,6 @@ img {
 
 .announcements-1-content h1 {
     color: #666;
-    font-size: 2.5rem;
     text-align: center;
     padding: 1.5rem;
 }
@@ -923,17 +926,17 @@ img {
 
 .announcements-content h1 {
     font-family: serif;
-    font-size: 3rem;
+    font-size: 2rem;
     padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .announcements-2-content {
     z-index: 1;
     background: rgba(0, 0, 27, 0.6);
-    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    box-shadow: inset 10px 90px 100px #000000, inset -10px -90px 100px #000000;
     width: 100%;
-    height: 45vh;
+    //height: 45vh;
     left: 0;
     top: 0;
     position: absolute;
@@ -949,9 +952,9 @@ img {
 .announcements-3-content {
     z-index: 1;
     background: rgba(0, 0, 27, 0.6);
-    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    box-shadow: inset 10px 90px 100px #000000, inset -10px -90px 100px #000000;
     width: 100%;
-    height: 45vh;
+    //height: 45.1vh;
     left: 0;
     top: 0;
     position: relative;
@@ -967,9 +970,9 @@ img {
 .announcements-4-content {
     z-index: 1;
     background: rgba(0, 0, 27, 0.6);
-    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    box-shadow: inset 10px 90px 100px #000000, inset -10px -90px 100px #000000;
     width: 100%;
-    height: 45vh;
+    //height: 45vh;
     left: 0;
     top: 0;
     position: relative;
@@ -997,7 +1000,7 @@ img {
 
 .contact-item h1 {
     font-family: serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 2rem 0 2rem 0;
     color: #051272;
 }
@@ -1005,15 +1008,15 @@ img {
 .icons a {
     font-size: 2.5rem;
     padding-top: 1rem;
-    letter-spacing: 2rem;
+    letter-spacing: 1rem;
     color: #777;
 }
 
 .contact-info h2 {
     line-height: 1;
     font-family: serif;
-    font-size: 3rem;
-    padding: 3rem 0 2rem 0;
+    font-size: 2.5rem;
+    padding: 2rem 0;
     color: #051272;
 }
 
@@ -1034,14 +1037,14 @@ img {
 }
 
 #contact-3 .af {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    font-size: 2rem;
+    margin: 0;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
     line-height: 3rem;
-    background: url("../img/img4.png") no-repeat center;
+    background: url("../img/img4.png") no-repeat center 30vh;
     background-color: rgb(0, 0, 30);
     align-items: center;
-    height: 70vh;
+    height: 80vh;
 }
 
 //*FAQS*//
@@ -1055,7 +1058,7 @@ img {
 .faqs {
     position: relative;
     background: url("../img/img24.jpg") no-repeat center center/cover;
-    height: 70vh;
+    height: 55vh;
     widows: 100%;
 }
 
@@ -1065,11 +1068,11 @@ img {
 
 .faqs-top h1 {
     font-family: "Cinzel", serif;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 3.7vh;
     padding-top: 2rem;
     margin-right: 65vw;
-    padding-left: 1.5rem;
+    padding-left: .5rem;
     text-align: left;
 }
 
@@ -1079,7 +1082,7 @@ img {
     justify-content: center;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     letter-spacing: 2vw;
     text-transform: uppercase;
     color: #eee;
@@ -1091,7 +1094,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70vh;
+    height: 55vh;
     z-index: 1;
     background: rgba(0, 0, 27, 0.6);
     box-shadow: inset 30px 25px 62px #000000, inset -30px -25px 62px #000000;
@@ -1138,6 +1141,7 @@ img {
 }
 
 #faqs-2-content {
+    padding: 1rem;
     text-align: center;
     background: #777;
 }
